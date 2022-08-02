@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
         {
             Instantiate(_cloudParticlePrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            Debug.Log("passaro colidiu");
             return;
         }
 
@@ -19,6 +20,7 @@ public class Enemy : MonoBehaviour
         if (enemy != null)
         {
             Destroy(gameObject);
+            Debug.Log("inimigo destruido");
             return;
         }
 
